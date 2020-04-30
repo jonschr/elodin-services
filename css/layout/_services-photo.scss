@@ -1,0 +1,21 @@
+.loop-container.loop-layout-services_photo {
+    .featured-image {
+        background-color: #f7f7f7;
+        width: 100%;
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        height: 0;
+        padding-top: 56%;
+        margin-bottom: 10px;
+    }
+
+    h3 a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

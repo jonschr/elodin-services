@@ -18,15 +18,24 @@ function rb_services_photo_each() {
 	$title = get_the_title();
 	$permalink = get_the_permalink();
     $content = get_the_content();
+    
 
     //* Markup
-    printf( '<div class="featured-image" style="background-image:url( %s )"></div>', get_the_post_thumbnail_url( get_the_ID(), 'large' ) );
-
-    if ( $title )
-        printf( '<h3>%s</h3>', $title );
-    
     if ( $content )
-        printf( '<a href="%s" class="button">Learn more</a>', $permalink );
+        printf( '<a href="%s" class="featured-image" style="background-image:url( %s )"></a>', $permalink, get_the_post_thumbnail_url( $id, 'large' ) );
 
-        edit_post_link();
+    if ( !$content )
+        printf( '<div class="featured-image" style="background-image:url( %s )"></div>', get_the_post_thumbnail_url( $id, 'large' ) );
+
+    if ( $title ) {
+        
+        if ( $content )
+            printf( '<h3><a href="%s">%s</a></h3>', $permalink, $title );
+
+        if ( !$content )
+            printf( '<h3>%s</h3>', $title );
+
+    }
+
+    edit_post_link();
 }

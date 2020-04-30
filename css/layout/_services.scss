@@ -1,0 +1,33 @@
+.loop-container.loop-layout-services {
+    .excerpt {
+        margin-bottom: 15px;
+    }
+}
+
+@media(min-width: 960px) {
+    .loop-container.loop-layout-services {
+
+        &.loop-columns-2,
+        &.loop-columns-3 {
+            max-width: calc(100% + 60px);
+            width: calc(100% + 60px);
+            margin: 0 -30px;
+
+            .entry {
+                margin: 0 30px 60px;
+
+            }
+
+        }
+
+        &.loop-columns-2 .entry {
+            width: calc(100% / 2 - 60px);
+        }
+
+        &.loop-columns-3 .entry {
+            width: calc(100% / 3 - 60px);
+        }
+    }
+
+
+}
