@@ -23,11 +23,11 @@
         "cssnano": "^4.1.10",
         "dependencies": "0.0.1",
         "gulp-load-plugins": "^2.0.3",
-        "gulp-sass": "^4.0.2",
+        "gulp-sass": "^4.1.0",
+        "gulp-sass-glob": "^1.1.0",
         "gulp-sourcemaps": "^2.6.5"
     },
     "devDependencies": {
-        "gulp-minify": "^3.1.0",
-        "gulp-sass-glob": "^1.1.0"
+        "gulp-minify": "^3.1.0"
     }
 }
