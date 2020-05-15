@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Services
 	Plugin URI: https://github.com/jonschr/elodin-services
     Description: Just another services plugin
-	Version: 1.0
+	Version: 1.0.2
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,7 +28,7 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'ELODIN_SERVICES', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'ELODIN_SERVICES_VERSION', '1.0' );
+define ( 'ELODIN_SERVICES_VERSION', '1.0.2' );
 
 // Post type
 require_once( 'lib/post_type.php' );

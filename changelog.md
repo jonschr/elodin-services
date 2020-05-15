@@ -1,4 +1,4 @@
-### 1.0.1
+### 1.0.2
 * Update the home page listed for the plugin and add changelog
 
 ### 1.0
