@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: Elodin Services
-	Plugin URI: https://elod.in
+	Plugin URI: https://github.com/jonschr/elodin-services
     Description: Just another services plugin
 	Version: 1.0
     Author: Jon Schroeder
