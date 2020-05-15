@@ -59,12 +59,6 @@
     .entry:hover {
         box-shadow: 0 3px 10px rgba(black, 0.1);
         transform: translateY(-5px) scale(1.02);
-
-        .featured-image {
-            &:before {
-                // background-color: rgba($blue, 0.7);
-            }
-        }
     }
 
     a.overlay {
