@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Services
 	Plugin URI: https://elod.in
     Description: Just another services plugin
-	Version: 0.1
+	Version: 1.0
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -28,7 +28,7 @@ if ( !defined( 'ABSPATH' ) ) {
 define( 'ELODIN_SERVICES', dirname( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'ELODIN_SERVICES_VERSION', '0.1' );
+define ( 'ELODIN_SERVICES_VERSION', '1.0' );
 
 // Post type
 require_once( 'lib/post_type.php' );
@@ -53,3 +53,15 @@ function elodin_services_enqueues() {
     wp_register_script( 'elodin-services-slick-main', plugin_dir_url( __FILE__ ) . 'vendor/slick/slick.min.js', array( 'jquery' ), ELODIN_SERVICES_VERSION, true );
 	
 }
+
+
+// Updater
+require 'vendor/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/jonschr/elodin-services',
+	__FILE__,
+	'elodin-services'
+);
+
+// Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
