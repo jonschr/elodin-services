@@ -14,19 +14,21 @@ This plugin does the following:
 
 ## Default Layouts 
 ### services (default)
-A list of services with excerpts. `[loop post_type="services" layout="services" columns="3"]` 
+A list of services with excerpts and featured images. `[loop post_type="services" layout="services" columns="3"]` 
 
-![Screen Shot 2020-05-15 at 2 53 36 PM](https://user-images.githubusercontent.com/2929672/82090877-fdd70780-96bb-11ea-9261-5c3f4d7fcb27.jpg)
+### services_excerpt
+
+A list of services with excerpts (but no images). `[loop post_type="services" layout="services_excerpt" columns="3"]` 
+
+### services_photo
+A list of services with featured images (but no excepts) `[loop post_type="services" layout="services_photo" columns="3"]`
+
+![Screen Shot 2020-05-15 at 2 53 48 PM](https://user-images.githubusercontent.com/2929672/82090895-06c7d900-96bc-11ea-9ce6-ed6316bf84f1.jpg)
 
 ### services_slider
 A slider of services with featured images and excerpts. `[loop post_type="services" layout="services_slider"]` 
 
 ![Screen Shot 2020-05-15 at 2 53 18 PM](https://user-images.githubusercontent.com/2929672/82090848-f1eb4580-96bb-11ea-83e8-1b7357ecc81e.jpg)
-
-### services_photo
-A list of services with featured images `[loop post_type="services" layout="services_photo" columns="3"]`
-
-![Screen Shot 2020-05-15 at 2 53 48 PM](https://user-images.githubusercontent.com/2929672/82090895-06c7d900-96bc-11ea-9ce6-ed6316bf84f1.jpg)
 
 ## More sample shortcodes
 
