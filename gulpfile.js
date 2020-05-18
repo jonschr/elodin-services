@@ -6,10 +6,11 @@ var sassGlob = require('gulp-sass-glob');
 
 //* Tasks
 gulp.task('style', function () {
-    return gulp.src('css/elodin-services.scss')
+    return gulp
+        .src('css/elodin-services.scss')
         .pipe(sassGlob())
-        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.init())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('css/'))
 });
