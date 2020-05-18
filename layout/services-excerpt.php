@@ -1,8 +1,8 @@
 <?php
 
 //* Output each services
-add_action( 'add_loop_layout_services', 'rb_services_each' );
-function rb_services_each() {
+add_action( 'add_loop_layout_services_excerpt', 'elodin_services_register_services_excerpt_layout' );
+function elodin_services_register_services_excerpt_layout() {
 
 	//* Global vars
 	global $post;
@@ -18,12 +18,6 @@ function rb_services_each() {
     if ( $permalink )
         printf( '<a href="%s" class="overlay"></a>', $permalink );
 
-    if ( $content )
-        printf( '<a href="%s" class="featured-image" style="background-image:url( %s )"></a>', $permalink, get_the_post_thumbnail_url( $id, 'large' ) );
-
-    if ( !$content )
-        printf( '<div class="featured-image" style="background-image:url( %s )"></div>', get_the_post_thumbnail_url( $id, 'large' ) );
-
     if ( $title ) {
         
         if ( $content )
@@ -36,6 +30,9 @@ function rb_services_each() {
 
     if ( $excerpt )
         printf( '<div class="excerpt">%s</div>', $excerpt );
+    
+    if ( $content )
+        printf( '<a href="%s" class="button">Learn more</a>', $permalink );
 
     edit_post_link();
 }

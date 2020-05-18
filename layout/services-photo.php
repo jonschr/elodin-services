@@ -1,11 +1,5 @@
 <?php
 
-//* Output services before
-// add_action( 'before_loop_layout_services_photo', 'rb_services_photo_before' );
-function rb_services_photo_before( $args ) {
-	// wp_enqueue_script( 'SCRIPTHANDLE' );
-}
-
 //* Output each services
 add_action( 'add_loop_layout_services_photo', 'rb_services_photo_each' );
 function rb_services_photo_each() {

@@ -1,3 +1,8 @@
+### 1.1
+* Changing the default layout to have both images and excerpts
+* Creating new excerpts-only view
+* Updating documentation
+
 ### 1.0.2
 * Update the home page listed for the plugin and add changelog
 

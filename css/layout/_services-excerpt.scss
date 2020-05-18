@@ -1,13 +1,6 @@
-.loop-container.loop-layout-services {
-    .featured-image {
-        background-color: #f7f7f7;
-        width: 100%;
-        display: block;
-        background-size: cover;
-        background-position: center center;
-        height: 0;
-        padding-top: 56%;
-        margin-bottom: 10px;
+.loop-container.loop-layout-services_excerpt {
+    .excerpt {
+        margin-bottom: 15px;
     }
 
     h3 a {
@@ -17,10 +10,6 @@
             text-decoration: none;
         }
     }
-
-    .excerpt {
-        margin-bottom: 15px;
-    }
 }
 
 /* ==========================================================================
@@ -28,7 +17,7 @@
    ========================================================================== */
 
 @media(min-width: 960px) {
-    .loop-container.loop-layout-services {
+    .loop-container.loop-layout-services_excerpt {
 
         &.loop-columns-2,
         &.loop-columns-3 {
