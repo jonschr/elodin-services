@@ -16,9 +16,13 @@ This plugin does the following:
 ### services (default)
 A list of services with excerpts and featured images. `[loop post_type="services" layout="services" columns="3"]` 
 
+![Screen Shot 2020-05-18 at 1 49 02 PM](https://user-images.githubusercontent.com/2929672/82248816-5e5d8300-990e-11ea-9ca2-841aa8a836a4.jpg)
+
 ### services_excerpt
 
 A list of services with excerpts (but no images). `[loop post_type="services" layout="services_excerpt" columns="3"]` 
+
+![Screen Shot 2020-05-18 at 1 49 52 PM](https://user-images.githubusercontent.com/2929672/82248869-7a612480-990e-11ea-86ce-03661c816120.jpg)
 
 ### services_photo
 A list of services with featured images (but no excepts) `[loop post_type="services" layout="services_photo" columns="3"]`
