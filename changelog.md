@@ -1,3 +1,7 @@
+### 1.1.1
+* Adding capabilities for the prefooter widget area on single services
+* Adding styles to accommodate that
+
 ### 1.1
 * Changing the default layout to have both images and excerpts
 * Creating new excerpts-only view
