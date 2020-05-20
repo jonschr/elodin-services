@@ -30,11 +30,10 @@ define( 'ELODIN_SERVICES', dirname( __FILE__ ) );
 // Define the version of the plugin
 define ( 'ELODIN_SERVICES_VERSION', '1.1' );
 
-// Post type
+//* Basic setup
 require_once( 'lib/post_type.php' );
-
-// Tax
 require_once( 'lib/tax.php' );
+require_once( 'lib/single-services-modifications.php' );
 
 //* Layouts
 require_once( 'layout/services.php' );

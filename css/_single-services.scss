@@ -1,0 +1,12 @@
+.services-widget-wrap-after {
+    padding: 75px 30px;
+
+    @media(max-width: 300px) {
+        padding: 30px;
+    }
+
+    .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
