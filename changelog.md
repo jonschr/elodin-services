@@ -1,3 +1,6 @@
+### 1.1.2
+* Fixing an error caused if the theme isn't a Genesis theme (this can prevent activation of a Genesis theme)
+
 ### 1.1.1
 * Adding capabilities for the prefooter widget area on single services
 * Adding styles to accommodate that
