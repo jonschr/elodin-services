@@ -13,7 +13,6 @@ function rb_services_photo_each() {
 	$permalink = get_the_permalink();
     $content = get_the_content();
     
-
     //* Markup
     if ( $content )
         printf( '<a href="%s" class="featured-image" style="background-image:url( %s )"></a>', $permalink, get_the_post_thumbnail_url( $id, 'large' ) );

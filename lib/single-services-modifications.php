@@ -17,7 +17,7 @@ function elodin_services_register_widget_area_below() {
         'name'		    => __( 'Services single footer', 'elodin-services' ),
         'description'	=> __( 'An area intended to house anything you\'d like to show on all services (perhaps a listing of all of the services for easy navigation).', 'elodin-services' ),
         'before_title'  => '<h2>',
-        'after_title'  => '</h2>',
+        'after_title'   => '</h2>',
     ) );
 }
 

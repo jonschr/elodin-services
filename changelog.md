@@ -1,3 +1,7 @@
+### 1.1.3
+* Adding show_in_rest support to service categories, as they weren't showing on the Gutenberg backend
+* Minor code changes for readability
+
 ### 1.1.2
 * Fixing an error caused if the theme isn't a Genesis theme (this can prevent activation of a Genesis theme)
 

@@ -1,14 +1,15 @@
 <?php
 
-add_action( 'init', 'elodin_register_owens_taxonomies' );
-function elodin_register_owens_taxonomies() {
+add_action( 'init', 'elodin_register_services_taxonomies' );
+function elodin_register_services_taxonomies() {
 	register_taxonomy(
 		'service-categories',
 		'services',
 		array(
-			'label' => __( 'Service Categories' ),
-			'rewrite' => array( 'slug' => 'service-categories' ),
-			'hierarchical' => true,
+			'label' 		=> __( 'Service Categories' ),
+			'rewrite' 		=> array( 'slug' => 'service-categories' ),
+			'hierarchical' 	=> true,
+			'show_in_rest' 	=> true,
 		)
 	);
 }

@@ -3,7 +3,7 @@
 /**
  * Register the content stypes
  */
-function oneonone_register_post_types() {
+function elodin_services_register_post_types() {
 
 	//* NAME
 	$name_plural = 'Services';
@@ -50,4 +50,4 @@ function oneonone_register_post_types() {
 
 }
 
-add_action( 'init', 'oneonone_register_post_types' );
+add_action( 'init', 'elodin_services_register_post_types' );
