@@ -3,7 +3,7 @@
 	Plugin Name: Elodin Services
 	Plugin URI: https://github.com/jonschr/elodin-services
     Description: Just another services plugin
-	Version: 1.1.3
+	Version: 1.2.0
     Author: Jon Schroeder
     Author URI: https://elod.in
 
@@ -26,14 +26,16 @@ if ( !defined( 'ABSPATH' ) ) {
 
 // Plugin directory
 define( 'ELODIN_SERVICES', dirname( __FILE__ ) );
+define( 'ELODIN_SERVICES_DIR', plugin_dir_path( __FILE__ ) );
 
 // Define the version of the plugin
-define ( 'ELODIN_SERVICES_VERSION', '1.1.3' );
+define ( 'ELODIN_SERVICES_VERSION', '1.2.0' );
 
 //* Basic setup
 require_once( 'lib/post_type.php' );
 require_once( 'lib/tax.php' );
 require_once( 'lib/single-services-modifications.php' );
+require_once( 'lib/documentation-sidebar-link.php' );
 
 //* Layouts
 require_once( 'layout/services.php' );
@@ -54,6 +56,20 @@ function elodin_services_enqueues() {
 	
 }
 
+///////////////////////
+// ADMIN COLUMNS PRO //
+///////////////////////
+
+add_filter( 'acp/storage/file/directory/writable', '__return_false' ); //* CHANGE TO __return_true TO MAKE CHANGES
+add_filter( 'acp/storage/file/directory', 'elodin_services_acp_storage_file_directory' );
+function elodin_services_acp_storage_file_directory( $path ) {
+	// Use a writable path, directory will be created for you
+    return ELODIN_SERVICES_DIR . '/acp-settings';
+}
+
+/////////
+// PUC //
+/////////
 
 // Updater
 require 'vendor/plugin-update-checker/plugin-update-checker.php';

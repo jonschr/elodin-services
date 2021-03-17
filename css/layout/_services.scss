@@ -10,6 +10,11 @@
         margin-bottom: 10px;
     }
 
+    .entry {
+        padding: 0;
+        background-color: transparent;
+    }
+
     h3 a {
         text-decoration: none;
 
@@ -30,25 +35,28 @@
 @media(min-width: 960px) {
     .loop-container.loop-layout-services {
 
-        &.loop-columns-2,
-        &.loop-columns-3 {
-            max-width: calc(100% + 60px);
-            width: calc(100% + 60px);
-            margin: 0 -30px;
+        &.loop-columns-1 {
+            .loop-item-inner {
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-start;
 
-            .entry {
-                margin: 0 30px 60px;
+                .featured-image {
+                    padding-top: 0;
+                    height: auto;
+                    width: 35%;
+                    margin-right: 40px;
+                    margin-bottom: 0;
+                    min-height: 300px;
+                }
 
+                .services-content-wrap {
+                    width: calc(100% - 30%);
+                    display: flex;
+                    align-items: center;
+
+                }
             }
-
-        }
-
-        &.loop-columns-2 .entry {
-            width: calc(100% / 2 - 60px);
-        }
-
-        &.loop-columns-3 .entry {
-            width: calc(100% / 3 - 60px);
         }
     }
 }

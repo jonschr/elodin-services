@@ -1,3 +1,9 @@
+### 1.2.0
+* Adding 1-column layout for default services
+* Adding more specific styles to override defaults
+* Adding Admin Columns pro automation
+* Adding documentation link to sidebar
+
 ### 1.1.3
 * Adding show_in_rest support to service categories, as they weren't showing on the Gutenberg backend
 * Minor code changes for readability

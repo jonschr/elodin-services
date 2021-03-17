@@ -20,22 +20,26 @@ function rb_services_each() {
 
     if ( $content )
         printf( '<a href="%s" class="featured-image" style="background-image:url( %s )"></a>', $permalink, get_the_post_thumbnail_url( $id, 'large' ) );
-
+        
     if ( !$content )
         printf( '<div class="featured-image" style="background-image:url( %s )"></div>', get_the_post_thumbnail_url( $id, 'large' ) );
-
-    if ( $title ) {
         
-        if ( $content )
-            printf( '<h3><a href="%s">%s</a></h3>', $permalink, $title );
+    echo '<div class="services-content-wrap"><div class="services-content">';
 
-        if ( !$content )
-            printf( '<h3>%s</h3>', $title );
+        if ( $title ) {
+            
+            if ( $content )
+                printf( '<h3><a href="%s">%s</a></h3>', $permalink, $title );
 
-    }
+            if ( !$content )
+                printf( '<h3>%s</h3>', $title );
 
-    if ( $excerpt )
-        printf( '<div class="excerpt">%s</div>', $excerpt );
+        }
 
-    edit_post_link();
+        if ( $excerpt )
+            printf( '<div class="excerpt">%s</div>', $excerpt );
+
+        edit_post_link();
+    
+    echo '</div></div>';
 }
