@@ -1,3 +1,6 @@
+### 1.2.1
+* Fixing php notices in the slider layout
+
 ### 1.2.0
 * Adding 1-column layout for default services
 * Adding more specific styles to override defaults
