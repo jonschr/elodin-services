@@ -22,7 +22,7 @@ function elodin_services_register_widget_area_below() {
 }
 
 //* Display the widget area
-add_action( 'genesis_before_footer', 'elodin_services_add_widget_area_after' );
+add_action( 'genesis_before_footer', 'elodin_services_add_widget_area_after', 5 );
 function elodin_services_add_widget_area_after() {
 
     //* bail if we're not on a service
