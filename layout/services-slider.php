@@ -55,9 +55,11 @@ function elodin_services_slider_each() {
 	//* Vars
 	$title = get_the_title();
 	$permalink = get_the_permalink();
+    $content = get_the_content();
     // $thing = get_post_meta( $id, 'thing', true );
 
-    printf( '<a class="overlay" href="%s"></a>', $permalink );
+    if ( $content )
+        printf( '<a class="overlay" href="%s"></a>', $permalink );
 
     if ( has_post_thumbnail() ) 
         printf( '<div class="featured-image" style="background-image:url( %s )"></div>', get_the_post_thumbnail_url( $id, 'large' ) );
