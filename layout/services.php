@@ -15,7 +15,7 @@ function rb_services_each() {
     $content = get_the_content();
 
     //* Markup
-    if ( $permalink )
+    if ( $content )
         printf( '<a href="%s" class="overlay"></a>', $permalink );
 
     if ( $content )
