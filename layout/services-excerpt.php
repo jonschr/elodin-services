@@ -15,7 +15,7 @@ function elodin_services_register_services_excerpt_layout() {
     $content = get_the_content();
 
     //* Markup
-    if ( $permalink )
+    if ( $content )
         printf( '<a href="%s" class="overlay"></a>', $permalink );
 
     if ( $title ) {
