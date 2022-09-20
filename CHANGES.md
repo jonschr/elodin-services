@@ -1,3 +1,7 @@
+### 1.2.3
+
+-   BUGFIX: link on one of the layouts was outputting even with no content
+
 ### 1.2.2
 
 -   Removing the overlay on the slider layout in cases where there's no underlying content.
